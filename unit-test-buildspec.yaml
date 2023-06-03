@@ -10,10 +10,4 @@ phases:
       - npm install
   build:
     commands:
-      - ng build --prod
-    finally:
-       - echo this is the finally block!
-artifacts:
-  base-directory: dist/my-angular-project
-  files:
-    - "**/*"
+      - ng test --no-watch --no-progress --browsers=ChromeHeadlessCI
