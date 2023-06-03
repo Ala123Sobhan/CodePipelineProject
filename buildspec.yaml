@@ -4,7 +4,7 @@ phases:
     runtime-versions:
       nodejs: latest
     commands:
-      - npm install -g @angular/cli@9.0.6
+      - npm install -g @angular/cli@16.0.4
   pre_build:
     commands:
       - npm install
@@ -14,4 +14,4 @@ phases:
 artifacts:
   base-directory: dist/my-angular-project
   files:
-    - '**/*'    
+    - "**/*"
