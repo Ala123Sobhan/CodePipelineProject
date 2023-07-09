@@ -12,8 +12,9 @@ phases:
     commands:
       - ng build --prod
     finally:
-       - echo this is the finally block!
+      - echo this is the finally block!
 artifacts:
-  base-directory: dist/my-angular-project
   files:
-    - "**/*"
+    - "dist/my-angular-project/**/*"
+    - appspec.yml
+    - "deploy-scripts/**/*"
